@@ -134,7 +134,7 @@
                             <div class="catalog__items--old">4990p.</div>
                             <div class="catalog__items--new">2990p.</div>
                         </div>
-                        <div class="catalog__items--button">заказать</div>
+                        <div class="catalog__items--button"><a href="javascript:PopUpShow()">Заказать</a></div>
                     </div>
                     <div class="catalog__items--card">
                         <div class="catalog__items--foto2"></div>
@@ -155,7 +155,7 @@
                             <div class="catalog__items--old">4990p.</div>
                             <div class="catalog__items--new">2990p.</div>
                         </div>
-                        <div class="catalog__items--button">заказать</div>
+                        <div class="catalog__items--button"><a href="javascript:PopUpShow()">Заказать</a></div>
                     </div>
                     <div class="catalog__items--card">
                         <div class="catalog__items--foto3"></div>
@@ -176,7 +176,7 @@
                             <div class="catalog__items--old">4990p.</div>
                             <div class="catalog__items--new">2990p.</div>
                         </div>
-                        <div class="catalog__items--button">заказать</div>
+                        <div class="catalog__items--button"><a href="javascript:PopUpShow()">Заказать</a></div>
                     </div>
                     <div class="catalog__items--card">
                         <div class="catalog__items--foto"></div>
@@ -197,7 +197,7 @@
                             <div class="catalog__items--old">4990p.</div>
                             <div class="catalog__items--new">2990p.</div>
                         </div>
-                        <div class="catalog__items--button">заказать</div>
+                        <div class="catalog__items--button"><a href="javascript:PopUpShow()">Заказать</a></div>
                     </div>
                     <div class="catalog__items--card">
                         <div class="catalog__items--foto2"></div>
@@ -218,7 +218,7 @@
                             <div class="catalog__items--old">4990p.</div>
                             <div class="catalog__items--new">2990p.</div>
                         </div>
-                        <div class="catalog__items--button">заказать</div>
+                        <div class="catalog__items--button"><a href="javascript:PopUpShow()">Заказать</a></div>
                     </div>
                     <div class="catalog__items--card">
                         <div class="catalog__items--foto3"></div>
@@ -261,5 +261,47 @@
                 </div>
             </div>
         </div>
+
+        <div class="b-popup" id="popup1">
+            <div class="b-popup-content">
+                <div class="popup__foto"><img src="./card__foto3.png" alt="Девочка"></div>
+                <div class="popup__info">
+                    <div class="popup__out"><a href="javascript:PopUpHide()"><img src="./004-cancel.png" alt=""></a></div>
+                    <div class="popup__h2">Портупея "Джони Миллер"</div>
+                    <div class="catalog__items--price">
+                        <div class="catalog__items--old">4990p.</div>
+                        <div class="catalog__items--new">2990p.</div>
+                    </div>
+                    <select class="popup__size">
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                      </select>
+                    <input class="popup__size"placeholder="Ваше имя">
+                    <input type="phone" class="popup__size"placeholder="Введите ваш телефон">
+                    <a href="javascript:PopUpHide()"><div class="catalog__items--button">ОФОРМИТЬ ЗАКАЗ</div></a>
+                </div>
+            
+            </div>
+        </div>
+
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
 </body>
 </html>
